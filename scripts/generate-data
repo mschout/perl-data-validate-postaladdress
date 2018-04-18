@@ -29,15 +29,16 @@ for my $link (grep { $_->url =~ m|^/ssl-address/data/[A-Z]{2}$| } $mech->links) 
     (my $country = $link->url) =~ s|^.*/||;
     say $country;
 
-    my $filename = 'data/' . ($country eq 'ZZ' ? 'default.json' : "$country.json");
+    my $outfile = path(__FILE__)->parent->parent
+        ->child('lib/Data/Validate/PostalAddress/data')
+        ->child($country eq 'ZZ' ? 'default.json' : "$country.json");
 
-    unless (-f $filename) {
+    unless ($outfile->exists) {
         my $def = process_country($country);
 
         say $encoder->encode($def);
 
-        my $file = path($filename);
-        $file->spew($encoder->encode($def));
+        $outfile->spew($encoder->encode($def));
     }
 }
 
