@@ -1,0 +1,25 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state",
+      "zip"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$zip}} {{$city}}{{$state}}",
+   "states" : {
+      "Cabo Delgado" : "Cabo Delgado",
+      "Cidade de Maputo" : "Cidade de Maputo",
+      "Gaza" : "Gaza",
+      "Inhambane" : "Inhambane",
+      "Manica" : "Manica",
+      "Maputo" : "Maputo",
+      "Nampula" : "Nampula",
+      "Niassa" : "Niassa",
+      "Sofala" : "Sofala",
+      "Tete" : "Tete",
+      "Zambezia" : "Zambezia"
+   },
+   "zip_pattern" : "\\d{4}"
+}

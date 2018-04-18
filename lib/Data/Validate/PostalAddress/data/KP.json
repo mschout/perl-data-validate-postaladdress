@@ -1,0 +1,25 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state",
+      "zip"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$city}}%n{{$state}}, {{$zip}}",
+   "local_format" : "{{$zip}}%n{{$state}}%n{{$city}}%n{{$street_address}}%n{{$organization}}%n{{$name}}",
+   "states" : {
+      "강원도" : "Kangwon",
+      "라선 특별시" : "Rason",
+      "량강도" : "Ryanggang",
+      "자강도" : "Chagang",
+      "평안 남도" : "South Pyongan",
+      "평안 북도" : "North Pyongan",
+      "평양 직할시" : "Pyongyang",
+      "함경 남도" : "South Hamgyong",
+      "함경 북도" : "North Hamgyong",
+      "황해남도" : "South Hwanghae",
+      "황해북도" : "North Hwanghae"
+   }
+}

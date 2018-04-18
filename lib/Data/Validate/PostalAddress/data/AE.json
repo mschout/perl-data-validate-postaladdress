@@ -1,0 +1,23 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "state"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$state}}",
+   "required_fields" : [
+      "street_address",
+      "state"
+   ],
+   "state_name_type" : "emirate",
+   "states" : {
+      "أبو ظبي" : "Abu Dhabi",
+      "إمارة الشارقةّ" : "Sharjah",
+      "إمارة دبيّ" : "Dubai",
+      "إمارة رأس الخيمة" : "Ras al Khaimah",
+      "الفجيرة" : "Fujairah",
+      "ام القيوين" : "Umm Al Quwain",
+      "عجمان" : "Ajman"
+   }
+}

@@ -1,0 +1,42 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "dependent_locality",
+      "city",
+      "state",
+      "zip"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$dependent_locality}}%n{{$city}}%n{{$state}} {{$zip}}",
+   "state_name_type" : "county",
+   "states" : {
+      "Co. Carlow" : "Co. Carlow",
+      "Co. Cavan" : "Co. Cavan",
+      "Co. Clare" : "Co. Clare",
+      "Co. Cork" : "Co. Cork",
+      "Co. Donegal" : "Co. Donegal",
+      "Co. Dublin" : "Co. Dublin",
+      "Co. Galway" : "Co. Galway",
+      "Co. Kerry" : "Co. Kerry",
+      "Co. Kildare" : "Co. Kildare",
+      "Co. Kilkenny" : "Co. Kilkenny",
+      "Co. Laois" : "Co. Laois",
+      "Co. Leitrim" : "Co. Leitrim",
+      "Co. Limerick" : "Co. Limerick",
+      "Co. Longford" : "Co. Longford",
+      "Co. Louth" : "Co. Louth",
+      "Co. Mayo" : "Co. Mayo",
+      "Co. Meath" : "Co. Meath",
+      "Co. Monaghan" : "Co. Monaghan",
+      "Co. Offaly" : "Co. Offaly",
+      "Co. Roscommon" : "Co. Roscommon",
+      "Co. Sligo" : "Co. Sligo",
+      "Co. Tipperary" : "Co. Tipperary",
+      "Co. Waterford" : "Co. Waterford",
+      "Co. Westmeath" : "Co. Westmeath",
+      "Co. Wexford" : "Co. Wexford",
+      "Co. Wicklow" : "Co. Wicklow"
+   },
+   "zip_pattern" : "[\\dA-Z]{3} ?[\\dA-Z]{4}"
+}

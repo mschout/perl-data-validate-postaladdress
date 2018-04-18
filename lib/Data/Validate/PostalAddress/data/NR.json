@@ -1,0 +1,30 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "state"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$state}}",
+   "required_fields" : [
+      "street_address",
+      "state"
+   ],
+   "state_name_type" : "district",
+   "states" : {
+      "Aiwo District" : "Aiwo District",
+      "Anabar District" : "Anabar District",
+      "Anetan District" : "Anetan District",
+      "Anibare District" : "Anibare District",
+      "Baiti District" : "Baiti District",
+      "Boe District" : "Boe District",
+      "Buada District" : "Buada District",
+      "Denigomodu District" : "Denigomodu District",
+      "Ewa District" : "Ewa District",
+      "Ijuw District" : "Ijuw District",
+      "Meneng District" : "Meneng District",
+      "Nibok District" : "Nibok District",
+      "Uaboe District" : "Uaboe District",
+      "Yaren District" : "Yaren District"
+   }
+}

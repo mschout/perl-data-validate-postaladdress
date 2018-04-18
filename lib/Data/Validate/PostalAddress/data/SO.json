@@ -1,0 +1,42 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state",
+      "zip"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$city}}, {{$state}} {{$zip}}",
+   "required_fields" : [
+      "street_address",
+      "city",
+      "state"
+   ],
+   "states" : {
+      "AD" : "Awdal",
+      "BK" : "Bakool",
+      "BN" : "Banaadir",
+      "BR" : "Bari",
+      "BY" : "Bay",
+      "GD" : "Gedo",
+      "GG" : "Galguduud",
+      "HR" : "Hiiraan",
+      "JD" : "Jubbada Dhexe",
+      "JH" : "Jubbada Hoose",
+      "MD" : "Mudug",
+      "NG" : "Nugaal",
+      "SD" : "Shabeellaha Dhexe",
+      "SG" : "Sanaag",
+      "SH" : "Shabeellaha Hoose",
+      "SL" : "Sool",
+      "TG" : "Togdheer",
+      "WG" : "Woqooyi Galbeed"
+   },
+   "uppercase_fields" : [
+      "street_address",
+      "city",
+      "state"
+   ],
+   "zip_pattern" : "[A-Z]{2} ?\\d{5}"
+}

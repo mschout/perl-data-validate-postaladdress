@@ -1,0 +1,12 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "zip"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%nSI-{{$zip}} {{$city}}",
+   "postal_code_prefix" : "SI-",
+   "zip_pattern" : "\\d{4}"
+}

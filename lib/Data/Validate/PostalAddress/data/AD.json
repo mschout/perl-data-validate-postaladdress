@@ -1,0 +1,29 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "zip"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$zip}} {{$city}}",
+   "state_zip_patterns" : {
+      "Canillo" : "AD10[01]",
+      "Encamp" : "AD20[01]",
+      "Escaldes-Engordany" : "AD70[01]",
+      "La Massana" : "AD40[01]",
+      "Ordino" : "AD30[01]",
+      "Parròquia d'Andorra la Vella" : "AD50[01]",
+      "Sant Julià de Lòria" : "AD60[01]"
+   },
+   "states" : {
+      "Canillo" : "Canillo",
+      "Encamp" : "Encamp",
+      "Escaldes-Engordany" : "Escaldes-Engordany",
+      "La Massana" : "La Massana",
+      "Ordino" : "Ordino",
+      "Parròquia d'Andorra la Vella" : "Andorra la Vella",
+      "Sant Julià de Lòria" : "Sant Julià de Lòria"
+   },
+   "zip_pattern" : "AD[1-7]0\\d"
+}

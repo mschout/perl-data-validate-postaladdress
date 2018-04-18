@@ -1,0 +1,21 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "state",
+      "zip"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$state}} {{$zip}}",
+   "required_fields" : [
+      "street_address",
+      "state"
+   ],
+   "state_name_type" : "island",
+   "states" : {
+      "Cayman Brac" : "Cayman Brac",
+      "Grand Cayman" : "Grand Cayman",
+      "Little Cayman" : "Little Cayman"
+   },
+   "zip_pattern" : "KY\\d-\\d{4}"
+}

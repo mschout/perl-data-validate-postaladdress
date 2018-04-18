@@ -1,0 +1,12 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state",
+      "zip"
+   ],
+   "format" : "{{$state}}%n{{$zip}} {{$city}}%n{{$street_address}}%n{{$organization}}%n{{$name}}",
+   "zip_pattern" : "\\d{6}"
+}

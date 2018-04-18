@@ -1,0 +1,33 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state",
+      "sort_code"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$city}}%n{{$state}} {{$sort_code}}",
+   "required_fields" : [
+      "street_address",
+      "city",
+      "state"
+   ],
+   "state_name_type" : "parish",
+   "states" : {
+      "Clarendon" : "Clarendon",
+      "Hanover" : "Hanover",
+      "Kingston" : "Kingston",
+      "Manchester" : "Manchester",
+      "Portland" : "Portland",
+      "St. Andrew" : "St. Andrew",
+      "St. Ann" : "St. Ann",
+      "St. Catherine" : "St. Catherine",
+      "St. Elizabeth" : "St. Elizabeth",
+      "St. James" : "St. James",
+      "St. Mary" : "St. Mary",
+      "St. Thomas" : "St. Thomas",
+      "Trelawny" : "Trelawny",
+      "Westmoreland" : "Westmoreland"
+   }
+}

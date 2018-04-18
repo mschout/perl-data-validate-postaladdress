@@ -1,0 +1,58 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state",
+      "zip"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$zip}} {{$city}} {{$state}}",
+   "state_zip_patterns" : {
+      "Artigas" : "55",
+      "Canelones" : "9[01]|1[456]",
+      "Cerro Largo" : "37",
+      "Colonia" : "70|75204",
+      "Durazno" : "97",
+      "Flores" : "85",
+      "Florida" : "94|9060|97005",
+      "Lavalleja" : "30",
+      "Maldonado" : "20",
+      "Montevideo" : "1|91600",
+      "Paysandú" : "60",
+      "Rivera" : "40",
+      "Rocha" : "27",
+      "Río Negro" : "65|60002",
+      "Salto" : "50",
+      "San José" : "80",
+      "Soriano" : "75|70003",
+      "Tacuarembó" : "45",
+      "Treinta y Tres" : "33|30203|30204|30302|37007"
+   },
+   "states" : {
+      "Artigas" : "Artigas",
+      "Canelones" : "Canelones",
+      "Cerro Largo" : "Cerro Largo",
+      "Colonia" : "Colonia",
+      "Durazno" : "Durazno",
+      "Flores" : "Flores",
+      "Florida" : "Florida",
+      "Lavalleja" : "Lavalleja",
+      "Maldonado" : "Maldonado",
+      "Montevideo" : "Montevideo",
+      "Paysandú" : "Paysandú",
+      "Rivera" : "Rivera",
+      "Rocha" : "Rocha",
+      "Río Negro" : "Río Negro",
+      "Salto" : "Salto",
+      "San José" : "San José",
+      "Soriano" : "Soriano",
+      "Tacuarembó" : "Tacuarembó",
+      "Treinta y Tres" : "Treinta y Tres"
+   },
+   "uppercase_fields" : [
+      "city",
+      "state"
+   ],
+   "zip_pattern" : "\\d{5}"
+}

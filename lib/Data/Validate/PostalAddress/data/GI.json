@@ -1,0 +1,13 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "zip"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%nGIBRALTAR%n{{$zip}}",
+   "required_fields" : [
+      "street_address"
+   ],
+   "zip_pattern" : "GX11 1AA"
+}

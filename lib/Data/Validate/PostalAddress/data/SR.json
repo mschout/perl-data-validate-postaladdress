@@ -1,0 +1,26 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$city}}%n{{$state}}",
+   "states" : {
+      "Brokopondo" : "Brokopondo",
+      "Commewijne" : "Commewijne",
+      "Coronie" : "Coronie",
+      "Marowijne" : "Marowijne",
+      "Nickerie" : "Nickerie",
+      "Para" : "Para",
+      "Paramaribo" : "Paramaribo",
+      "Saramacca" : "Saramacca",
+      "Sipaliwini" : "Sipaliwini",
+      "Wanica" : "Wanica"
+   },
+   "uppercase_fields" : [
+      "street_address",
+      "state"
+   ]
+}

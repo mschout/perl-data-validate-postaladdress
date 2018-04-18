@@ -1,0 +1,22 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "zip"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$city}}%n{{$street_address}}%n{{$zip}}",
+   "required_fields" : [
+      "street_address",
+      "city",
+      "zip"
+   ],
+   "uppercase_fields" : [
+      "street_address",
+      "city",
+      "name",
+      "organization"
+   ],
+   "zip_pattern" : "\\d{4}"
+}

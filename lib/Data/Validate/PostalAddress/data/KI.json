@@ -1,0 +1,18 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$state}}%n{{$city}}",
+   "state_name_type" : "island",
+   "uppercase_fields" : [
+      "street_address",
+      "city",
+      "name",
+      "organization",
+      "state"
+   ]
+}

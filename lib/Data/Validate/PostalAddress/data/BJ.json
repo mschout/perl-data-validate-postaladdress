@@ -1,0 +1,6 @@
+{
+   "uppercase_fields" : [
+      "street_address",
+      "city"
+   ]
+}

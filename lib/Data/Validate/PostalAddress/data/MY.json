@@ -1,0 +1,59 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "dependent_locality",
+      "city",
+      "state",
+      "zip"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$dependent_locality}}%n{{$zip}} {{$city}}%n{{$state}}",
+   "required_fields" : [
+      "street_address",
+      "city",
+      "zip"
+   ],
+   "state_name_type" : "state",
+   "state_zip_patterns" : {
+      "Johor" : "79|8[0-6]",
+      "Kedah" : "0[5-9]|34950",
+      "Kelantan" : "1[5-9]",
+      "Kuala Lumpur" : "5|60",
+      "Labuan" : "87",
+      "Melaka" : "7[5-8]",
+      "Negeri Sembilan" : "7[0-4]",
+      "Pahang" : "2[5-8]|[346]9",
+      "Perak" : "3[0-6]|39000",
+      "Perlis" : "0[12]",
+      "Pulau Pinang" : "1[0-4]",
+      "Putrajaya" : "62",
+      "Sabah" : "8[89]|9[01]",
+      "Sarawak" : "9[3-8]",
+      "Selangor" : "4[0-8]|6[3-8]",
+      "Terengganu" : "2[0-4]"
+   },
+   "states" : {
+      "Johor" : "Johor",
+      "Kedah" : "Kedah",
+      "Kelantan" : "Kelantan",
+      "Kuala Lumpur" : "Kuala Lumpur",
+      "Labuan" : "Labuan",
+      "Melaka" : "Melaka",
+      "Negeri Sembilan" : "Negeri Sembilan",
+      "Pahang" : "Pahang",
+      "Perak" : "Perak",
+      "Perlis" : "Perlis",
+      "Pulau Pinang" : "Pulau Pinang",
+      "Putrajaya" : "Putrajaya",
+      "Sabah" : "Sabah",
+      "Sarawak" : "Sarawak",
+      "Selangor" : "Selangor",
+      "Terengganu" : "Terengganu"
+   },
+   "uppercase_fields" : [
+      "city",
+      "state"
+   ],
+   "zip_pattern" : "\\d{5}"
+}

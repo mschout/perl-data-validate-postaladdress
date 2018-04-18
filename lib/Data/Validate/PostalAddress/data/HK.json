@@ -1,0 +1,24 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$city}}%n{{$state}}",
+   "local_format" : "{{$state}}%n{{$city}}%n{{$street_address}}%n{{$organization}}%n{{$name}}",
+   "required_fields" : [
+      "street_address",
+      "state"
+   ],
+   "state_name_type" : "area",
+   "states" : {
+      "Hong Kong Island" : "香港島",
+      "Kowloon" : "九龍",
+      "New Territories" : "新界"
+   },
+   "uppercase_fields" : [
+      "state"
+   ]
+}

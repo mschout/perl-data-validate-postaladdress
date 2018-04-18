@@ -1,0 +1,156 @@
+#!/usr/bin/env perl
+
+use 5.024;
+use strictures 2;
+use WWW::Mechanize;
+use Data::Dumper::AutoEncode;
+use Cpanel::JSON::XS qw(encode_json decode_json);
+use Path::Tiny;
+
+$Data::Dumper::AutoEncode::SortKeys = 1;
+
+my %FIELD_MAP = (
+    N => 'name',
+    O => 'organization',
+    A => 'street_address',
+    D => 'dependent_locality',
+    C => 'city',
+    S => 'state',
+    Z => 'zip',
+    X => 'sort_code');
+
+my $endpoint = 'https://chromium-i18n.appspot.com/ssl-address';
+my $mech = WWW::Mechanize->new;
+
+$mech->get($endpoint);
+
+my $encoder = Cpanel::JSON::XS->new->pretty->utf8->canonical;
+
+for my $link (grep { $_->url =~ m|^/ssl-address/data/[A-Z]{2}$| } $mech->links) {
+    (my $country = $link->url) =~ s|^.*/||;
+    say $country;
+
+    my $filename = 'data/' . ($country eq 'ZZ' ? 'default.json' : "$country.json");
+
+    unless (-f $filename) {
+        my $def = process_country($country);
+
+        say $encoder->encode($def);
+
+        my $file = path($filename);
+        $file->spew($encoder->encode($def));
+    }
+}
+
+sub process_country {
+    my $country = shift;
+
+    my $url = "$endpoint/data/$country";
+
+    $mech->get($url);
+
+    my $content = $mech->content(decoded_by_headers => 1);
+
+    my $data = decode_json($content);
+
+    return create_country_definition($country, $data);
+}
+
+sub create_country_definition {
+    my ($country, $data) = @_;
+
+    if ($country eq 'ZZ') {
+        # XXX this country holds defaults...
+        # missing state_name_type, sublocality_name_type, zip_name_type
+    }
+
+    my %format;
+
+    if (defined $$data{fmt}) {
+        $format{format} = convert_format($$data{fmt});
+    }
+
+    if (defined $$data{zip}) {
+        $format{zip_pattern} = $$data{zip};
+    }
+
+    if (defined $$data{require}) {
+        $format{required_fields} = [ map { $FIELD_MAP{$_} } split //, $$data{require} ],
+    }
+
+    if (defined $$data{upper}) {
+        $format{uppercase_fields} = [ map { $FIELD_MAP{$_} } split //, $$data{upper} ],
+    }
+
+    if (defined $$data{state_name_type}) {
+        $format{state_name_type} = $$data{state_name_type}
+    }
+
+    # XXX if we have a zip_pattern, should we append zip to required fields??
+
+    # prefer the latinized format
+    if (defined $$data{lfmt} and $$data{lfmt} ne $$data{fmt}) {
+        $format{format} = convert_format($$data{lfmt});
+        $format{local_format} = convert_format($$data{fmt});
+    }
+
+    if (defined $$data{sub_keys}) {
+        my @state_keys = split '~', $$data{sub_keys};
+
+        # prefer latin names
+        my @state_names = split '~', ($$data{sub_lnames} || $$data{sub_names} || $$data{sub_keys});
+
+        my %states;
+
+        @states{@state_keys} = @state_names;
+
+        $format{states} = \%states;
+
+        if (defined $$data{sub_zips}) {
+            my @zips = split '~', $$data{sub_zips};
+
+            my %state_zips;
+
+            @state_zips{@state_keys} = @zips;
+
+            $format{state_zip_patterns} = \%state_zips;
+        }
+    }
+
+    if ($$data{postprefix}) {
+        $format{postal_code_prefix} = $$data{postprefix};
+    }
+
+    if (defined $$data{fmt}) {
+        $format{fields} = get_available_fields($$data{fmt});
+    }
+
+    return \%format;
+}
+
+sub convert_format {
+    my $fmt = shift;
+
+    #$fmt =~ s/\%n/\n/g;
+
+    while (my ($char, $name) = each %FIELD_MAP) {
+        $fmt =~ s/\%$char/{{\$$name}}/;
+    }
+
+    return $fmt;
+}
+
+sub get_available_fields {
+    my $format = shift;
+
+    my %fields;
+    my @fields;
+
+    for my $f (qw(N O A D C S Z X)) {
+        if (index($format, '%'.$f) != -1) {
+            push @fields, $FIELD_MAP{$f};
+        }
+    }
+
+    return \@fields;
+}

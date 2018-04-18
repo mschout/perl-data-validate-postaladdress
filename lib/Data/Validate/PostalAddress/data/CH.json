@@ -1,0 +1,18 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "zip"
+   ],
+   "format" : "{{$organization}}%n{{$name}}%n{{$street_address}}%nCH-{{$zip}} {{$city}}",
+   "postal_code_prefix" : "CH-",
+   "required_fields" : [
+      "street_address",
+      "city",
+      "zip"
+   ],
+   "uppercase_fields" : [],
+   "zip_pattern" : "\\d{4}"
+}

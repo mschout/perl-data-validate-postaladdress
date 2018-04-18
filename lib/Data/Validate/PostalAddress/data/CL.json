@@ -1,0 +1,29 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state",
+      "zip"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$zip}} {{$city}}%n{{$state}}",
+   "states" : {
+      "Antofagasta" : "Antofagasta",
+      "Araucanía" : "Araucanía",
+      "Arica y Parinacota" : "Arica y Parinacota",
+      "Atacama" : "Atacama",
+      "Aysén" : "Aysén del General Carlos Ibáñez del Campo",
+      "Biobío" : "Biobío",
+      "Coquimbo" : "Coquimbo",
+      "Los Lagos" : "Los Lagos",
+      "Los Ríos" : "Los Ríos",
+      "Magallanes" : "Magallanes y de la Antártica Chilena",
+      "Maule" : "Maule",
+      "O'Higgins" : "Libertador General Bernardo O'Higgins",
+      "Región Metropolitana" : "Metropolitana de Santiago",
+      "Tarapacá" : "Tarapacá",
+      "Valparaíso" : "Valparaíso"
+   },
+   "zip_pattern" : "\\d{7}"
+}

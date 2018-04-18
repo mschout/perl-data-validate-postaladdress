@@ -1,0 +1,20 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$city}}, {{$state}}",
+   "required_fields" : [
+      "street_address",
+      "city",
+      "state"
+   ],
+   "state_name_type" : "island",
+   "states" : {
+      "Nevis" : "Nevis",
+      "St. Kitts" : "St. Kitts"
+   }
+}

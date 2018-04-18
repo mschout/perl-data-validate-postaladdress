@@ -1,0 +1,10 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "sort_code"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$sort_code}} {{$street_address}} {{$city}} %X"
+}

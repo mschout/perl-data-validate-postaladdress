@@ -1,0 +1,49 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state",
+      "zip"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$city}} {{$zip}}, {{$state}}",
+   "required_fields" : [
+      "street_address",
+      "city",
+      "state"
+   ],
+   "state_name_type" : "state",
+   "states" : {
+      "Amazonas" : "Amazonas",
+      "Anzoátegui" : "Anzoátegui",
+      "Apure" : "Apure",
+      "Aragua" : "Aragua",
+      "Barinas" : "Barinas",
+      "Bolívar" : "Bolívar",
+      "Carabobo" : "Carabobo",
+      "Cojedes" : "Cojedes",
+      "Delta Amacuro" : "Delta Amacuro",
+      "Dependencias Federales" : "Dependencias Federales",
+      "Distrito Federal" : "Distrito Federal",
+      "Falcón" : "Falcón",
+      "Guárico" : "Guárico",
+      "Lara" : "Lara",
+      "Miranda" : "Miranda",
+      "Monagas" : "Monagas",
+      "Mérida" : "Mérida",
+      "Nueva Esparta" : "Nueva Esparta",
+      "Portuguesa" : "Portuguesa",
+      "Sucre" : "Sucre",
+      "Trujillo" : "Trujillo",
+      "Táchira" : "Táchira",
+      "Vargas" : "Vargas",
+      "Yaracuy" : "Yaracuy",
+      "Zulia" : "Zulia"
+   },
+   "uppercase_fields" : [
+      "city",
+      "state"
+   ],
+   "zip_pattern" : "\\d{4}"
+}

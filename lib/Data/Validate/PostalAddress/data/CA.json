@@ -1,0 +1,56 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state",
+      "zip"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$city}} {{$state}} {{$zip}}",
+   "required_fields" : [
+      "street_address",
+      "city",
+      "state",
+      "zip"
+   ],
+   "state_zip_patterns" : {
+      "AB" : "T",
+      "BC" : "V",
+      "MB" : "R",
+      "NB" : "E",
+      "NL" : "A",
+      "NS" : "B",
+      "NT" : "X0E|X0G|X1A",
+      "NU" : "X0A|X0B|X0C",
+      "ON" : "K|L|M|N|P",
+      "PE" : "C",
+      "QC" : "G|H|J|K1A",
+      "SK" : "S|R8A",
+      "YT" : "Y"
+   },
+   "states" : {
+      "AB" : "Alberta",
+      "BC" : "British Columbia",
+      "MB" : "Manitoba",
+      "NB" : "New Brunswick",
+      "NL" : "Newfoundland and Labrador",
+      "NS" : "Nova Scotia",
+      "NT" : "Northwest Territories",
+      "NU" : "Nunavut",
+      "ON" : "Ontario",
+      "PE" : "Prince Edward Island",
+      "QC" : "Quebec",
+      "SK" : "Saskatchewan",
+      "YT" : "Yukon"
+   },
+   "uppercase_fields" : [
+      "street_address",
+      "city",
+      "name",
+      "organization",
+      "state",
+      "zip"
+   ],
+   "zip_pattern" : "[ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJ-NPRSTV-Z] ?\\d[ABCEGHJ-NPRSTV-Z]\\d"
+}

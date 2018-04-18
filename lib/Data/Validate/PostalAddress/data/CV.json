@@ -1,0 +1,24 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state",
+      "zip"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$zip}} {{$city}}%n{{$state}}",
+   "state_name_type" : "island",
+   "states" : {
+      "Boa Vista" : "Boa Vista",
+      "Brava" : "Brava",
+      "Fogo" : "Fogo",
+      "Maio" : "Maio",
+      "Sal" : "Sal",
+      "Santiago" : "Santiago",
+      "Santo Antão" : "Santo Antão",
+      "São Nicolau" : "São Nicolau",
+      "São Vicente" : "São Vicente"
+   },
+   "zip_pattern" : "\\d{4}"
+}

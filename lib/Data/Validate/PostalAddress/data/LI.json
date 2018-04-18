@@ -1,0 +1,17 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "zip"
+   ],
+   "format" : "{{$organization}}%n{{$name}}%n{{$street_address}}%nFL-{{$zip}} {{$city}}",
+   "postal_code_prefix" : "FL-",
+   "required_fields" : [
+      "street_address",
+      "city",
+      "zip"
+   ],
+   "zip_pattern" : "948[5-9]|949[0-8]"
+}

@@ -1,0 +1,32 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$city}}, {{$state}}",
+   "state_name_type" : "island",
+   "states" : {
+      "Abaco" : "Abaco Islands",
+      "Acklins" : "Acklins",
+      "Andros" : "Andros Island",
+      "Berry Islands" : "Berry Islands",
+      "Bimini" : "Bimini",
+      "Cat Island" : "Cat Island",
+      "Crooked Island" : "Crooked Island",
+      "Eleuthera" : "Eleuthera",
+      "Exuma" : "Exuma and Cays",
+      "Grand Bahama" : "Grand Bahama",
+      "Harbour Island" : "Harbour Island",
+      "Inagua" : "Inagua",
+      "Long Island" : "Long Island",
+      "Mayaguana" : "Mayaguana",
+      "N.P." : "New Providence",
+      "Ragged Island" : "Ragged Island",
+      "Rum Cay" : "Rum Cay",
+      "San Salvador" : "San Salvador",
+      "Spanish Wells" : "Spanish Wells"
+   }
+}

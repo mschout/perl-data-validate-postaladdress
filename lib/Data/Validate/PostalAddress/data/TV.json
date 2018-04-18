@@ -1,0 +1,27 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$city}}%n{{$state}}",
+   "state_name_type" : "island",
+   "states" : {
+      "Funafuti" : "Funafuti",
+      "Nanumanga" : "Nanumanga",
+      "Nanumea" : "Nanumea",
+      "Niulakita" : "Niulakita",
+      "Niutao" : "Niutao",
+      "Nui" : "Nui",
+      "Nukufetau" : "Nukufetau",
+      "Nukulaelae" : "Nukulaelae",
+      "Vaitupu" : "Vaitupu"
+   },
+   "uppercase_fields" : [
+      "street_address",
+      "city",
+      "state"
+   ]
+}

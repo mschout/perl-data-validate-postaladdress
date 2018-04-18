@@ -1,0 +1,59 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "dependent_locality",
+      "city",
+      "state",
+      "zip"
+   ],
+   "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$dependent_locality}}%n{{$city}}%n{{$state}}, {{$zip}}",
+   "local_format" : "{{$zip}}%n{{$state}}{{$city}}{{$dependent_locality}}%n{{$street_address}}%n{{$organization}}%n{{$name}}",
+   "required_fields" : [
+      "street_address",
+      "city",
+      "state",
+      "zip"
+   ],
+   "states" : {
+      "上海市" : "Shanghai Shi",
+      "云南省" : "Yunnan Sheng",
+      "内蒙古自治区" : "Neimenggu Zizhiqu",
+      "北京市" : "Beijing Shi",
+      "台湾" : "Taiwan",
+      "吉林省" : "Jilin Sheng",
+      "四川省" : "Sichuan Sheng",
+      "天津市" : "Tianjin Shi",
+      "宁夏回族自治区" : "Ningxia Huizuzizhiqu",
+      "安徽省" : "Anhui Sheng",
+      "山东省" : "Shandong Sheng",
+      "山西省" : "Shanxi Sheng",
+      "广东省" : "Guangdong Sheng",
+      "广西壮族自治区" : "Guangxi Zhuangzuzizhiqu",
+      "新疆维吾尔自治区" : "Xinjiang Weiwuerzizhiqu",
+      "江苏省" : "Jiangsu Sheng",
+      "江西省" : "Jiangxi Sheng",
+      "河北省" : "Hebei Sheng",
+      "河南省" : "Henan Sheng",
+      "浙江省" : "Zhejiang Sheng",
+      "海南省" : "Hainan Sheng",
+      "湖北省" : "Hubei Sheng",
+      "湖南省" : "Hunan Sheng",
+      "澳门" : "Macau",
+      "甘肃省" : "Gansu Sheng",
+      "福建省" : "Fujian Sheng",
+      "西藏自治区" : "Xizang Zizhiqu",
+      "贵州省" : "Guizhou Sheng",
+      "辽宁省" : "Liaoning Sheng",
+      "重庆市" : "Chongqing Shi",
+      "陕西省" : "Shaanxi Sheng",
+      "青海省" : "Qinghai Sheng",
+      "香港" : "Hong Kong",
+      "黑龙江省" : "Heilongjiang Sheng"
+   },
+   "uppercase_fields" : [
+      "state"
+   ],
+   "zip_pattern" : "\\d{6}"
+}

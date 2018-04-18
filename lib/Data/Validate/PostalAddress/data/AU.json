@@ -1,0 +1,43 @@
+{
+   "fields" : [
+      "name",
+      "organization",
+      "street_address",
+      "city",
+      "state",
+      "zip"
+   ],
+   "format" : "{{$organization}}%n{{$name}}%n{{$street_address}}%n{{$city}} {{$state}} {{$zip}}",
+   "required_fields" : [
+      "street_address",
+      "city",
+      "state",
+      "zip"
+   ],
+   "state_name_type" : "state",
+   "state_zip_patterns" : {
+      "ACT" : "29|2540|260|261[0-8]|02|2620",
+      "NSW" : "1|2[0-57-8]|26[2-9]|261[189]|3500|358[56]|3644|3707",
+      "NT" : "0[89]",
+      "QLD" : "[49]",
+      "SA" : "5|0872",
+      "TAS" : "7",
+      "VIC" : "[38]",
+      "WA" : "6|0872"
+   },
+   "states" : {
+      "ACT" : "Australian Capital Territory",
+      "NSW" : "New South Wales",
+      "NT" : "Northern Territory",
+      "QLD" : "Queensland",
+      "SA" : "South Australia",
+      "TAS" : "Tasmania",
+      "VIC" : "Victoria",
+      "WA" : "Western Australia"
+   },
+   "uppercase_fields" : [
+      "city",
+      "state"
+   ],
+   "zip_pattern" : "\\d{4}"
+}
