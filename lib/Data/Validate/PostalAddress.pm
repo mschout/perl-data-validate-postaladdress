@@ -25,7 +25,7 @@ has data => (is => 'lazy');
 around BUILDARGS => sub {
     my ($orig, $class) = splice @_, 0, 2;
 
-    if (@_ == 1) {
+    if (@_ == 1 and not ref $_[0]) {
         return $class->$orig(country => shift);
     }
     else {
