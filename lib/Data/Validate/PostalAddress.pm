@@ -50,6 +50,19 @@ sub has_field {
     }
 }
 
+=method required_fields(): list
+
+get the list of required fields.  See L<FIELD NAMES> for the list of fields
+that might be returned.
+
+=cut
+
+sub required_fields {
+    my $self = shift;
+
+    return @{ $self->data->{required_fields} };
+}
+
 =method has_postal_code(): boolean
 
 returns true if this country has a postal code field.

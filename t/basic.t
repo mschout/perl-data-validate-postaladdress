@@ -17,6 +17,8 @@ is $obj->postal_code_pattern, '(\d{5})(?:[ \-](\d{4}))?';
 ok $obj->is_valid_state('CA'), 'is_valid_state';
 ok $obj->is_valid_state_name('California'), 'is_valid_state_name';
 
+is_deeply [sort $obj->required_fields], [sort (qw(street_address city state zip))];
+
 my $regex = $obj->postal_code_regex;
 is ref $regex, 'Regexp';
 
