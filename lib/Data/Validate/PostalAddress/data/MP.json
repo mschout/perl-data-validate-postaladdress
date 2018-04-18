@@ -22,5 +22,6 @@
       "organization",
       "state"
    ],
+   "zip_name_type" : "zip",
    "zip_pattern" : "(9695[012])(?:[ \\-](\\d{4}))?"
 }

@@ -38,5 +38,6 @@
       "Co. Wexford" : "Co. Wexford",
       "Co. Wicklow" : "Co. Wicklow"
    },
+   "zip_name_type" : "eircode",
    "zip_pattern" : "[\\dA-Z]{3} ?[\\dA-Z]{4}"
 }

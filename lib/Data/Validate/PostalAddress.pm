@@ -126,6 +126,24 @@ sub postal_code_regex {
     return $regex;
 }
 
+=method postal_code_name(): string
+
+Get the name of the postal code.  Default is C<postal>.  Possible values are:
+
+=for :list
+* eircode
+* pin
+* postal
+* zip
+
+=cut
+
+sub postal_code_name {
+    my $self = shift;
+
+    return $self->data->{zip_name_type};
+}
+
 =method has_state(): boolean
 
 Returns true if this country is subdivided into states or provinces etc.

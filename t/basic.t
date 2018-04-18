@@ -16,6 +16,7 @@ is $obj->state_name_type, 'state';
 is $obj->postal_code_pattern, '(\d{5})(?:[ \-](\d{4}))?';
 ok $obj->is_valid_state('CA'), 'is_valid_state';
 ok $obj->is_valid_state_name('California'), 'is_valid_state_name';
+is $obj->postal_code_name, 'zip';
 
 is_deeply [sort $obj->required_fields], [sort (qw(street_address city state zip))];
 
@@ -30,5 +31,16 @@ ok $obj->is_valid_postal_code('75229');
 ok $obj->is_valid_postal_code('75229-1234');
 ok ! $obj->is_valid_postal_code('752299');
 ok ! $obj->is_valid_postal_code('ABC123');
+
+my %pc_names = (
+    AS => 'zip',
+    IE => 'eircode',
+    CA => 'postal',
+    IN => 'pin');
+
+while (my ($country, $name) = each %pc_names) {
+    my $pv = new_ok 'Data::Validate::PostalAddress', [$country];
+    is $pv->postal_code_name, $name;
+}
 
 done_testing;

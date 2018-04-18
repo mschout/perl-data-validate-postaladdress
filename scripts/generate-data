@@ -70,6 +70,10 @@ sub create_country_definition {
         $format{format} = convert_format($$data{fmt});
     }
 
+    if (defined $$data{zip_name_type}) {
+        $format{zip_name_type} = $$data{zip_name_type};
+    }
+
     if (defined $$data{zip}) {
         $format{zip_pattern} = $$data{zip};
     }

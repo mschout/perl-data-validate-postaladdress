@@ -13,5 +13,6 @@
    "state_name_type" : "province",
    "uppercase_fields" : [
       "city"
-   ]
+   ],
+   "zip_name_type" : "postal"
 }
