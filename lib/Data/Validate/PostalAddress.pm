@@ -206,7 +206,15 @@ sub is_valid_state_name {
 sub _load_country_file {
     my ($self, $country) = @_;
 
-    my $json = path($self->data_dir, $country . '.json')->slurp_utf8;
+    my $path = path($self->data_dir, $country . '.json');
+
+    # if we don't have any data for this country, return empty hash.  Default
+    # data will be merged in.
+    unless ($path->exists) {
+        return {};
+    }
+
+    my $json = $path->slurp;
 
     return decode_json($json);
 }
