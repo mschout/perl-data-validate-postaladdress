@@ -3,7 +3,6 @@
 use 5.024;
 use strictures 2;
 use WWW::Mechanize;
-use Data::Dumper::AutoEncode;
 use Cpanel::JSON::XS qw(encode_json decode_json);
 use Path::Tiny;
 
