@@ -160,7 +160,21 @@ sub has_state {
 
 Returns the name of the state type.  For example, in the US, this returns
 C<state>.  For Canada, this returns C<province>.  For Taiwan, this returns
-C<county>.
+C<county>.  Possible values returned are:
+
+=for :list
+* area
+* county
+* department
+* district
+* do_si
+* emirate
+* island
+* oblast
+* parish
+* prefecture
+* province
+* state
 
 =cut
 
