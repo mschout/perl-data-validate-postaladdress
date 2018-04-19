@@ -64,5 +64,11 @@
       "雲林縣" : "Yunlin County",
       "高雄市" : "Kaohsiung City"
    },
+   "zip_examples" : [
+      "104",
+      "106",
+      "10603",
+      "40867"
+   ],
    "zip_pattern" : "\\d{3}(?:\\d{2})?"
 }

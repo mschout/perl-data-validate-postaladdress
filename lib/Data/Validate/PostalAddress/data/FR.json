@@ -17,5 +17,10 @@
       "city",
       "sort_code"
    ],
+   "zip_examples" : [
+      "33380",
+      "34092",
+      "33506"
+   ],
    "zip_pattern" : "\\d{2} ?\\d{3}"
 }

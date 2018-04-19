@@ -13,5 +13,9 @@
       "city",
       "zip"
    ],
+   "zip_examples" : [
+      "4750",
+      "2998"
+   ],
    "zip_pattern" : "\\d{4}"
 }

@@ -16,5 +16,8 @@
       "city",
       "zip"
    ],
+   "zip_examples" : [
+      "STHL 1ZZ"
+   ],
    "zip_pattern" : "(?:ASCN|STHL) 1ZZ"
 }

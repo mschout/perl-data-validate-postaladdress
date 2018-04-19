@@ -73,5 +73,9 @@
       "Đồng Nai" : "Dong Nai Province",
       "Đồng Tháp" : "Dong Thap Province"
    },
+   "zip_examples" : [
+      "70010",
+      "55999"
+   ],
    "zip_pattern" : "\\d{5}\\d?"
 }

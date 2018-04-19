@@ -16,5 +16,8 @@
       "city",
       "zip"
    ],
+   "zip_examples" : [
+      "SIQQ 1ZZ"
+   ],
    "zip_pattern" : "SIQQ 1ZZ"
 }

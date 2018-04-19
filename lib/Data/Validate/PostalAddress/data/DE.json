@@ -12,5 +12,9 @@
       "city",
       "zip"
    ],
+   "zip_examples" : [
+      "26133",
+      "53225"
+   ],
    "zip_pattern" : "\\d{5}"
 }

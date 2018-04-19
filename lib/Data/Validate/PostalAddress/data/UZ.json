@@ -12,5 +12,9 @@
       "city",
       "state"
    ],
+   "zip_examples" : [
+      "702100",
+      "700000"
+   ],
    "zip_pattern" : "\\d{6}"
 }

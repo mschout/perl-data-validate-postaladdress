@@ -177,5 +177,13 @@
       "Zamboanga del Norte" : "Zamboanga del Norte",
       "Zamboanga del Sur" : "Zamboanga del Sur"
    },
+   "zip_examples" : [
+      "1008",
+      "1050",
+      "1135",
+      "1207",
+      "2000",
+      "1000"
+   ],
    "zip_pattern" : "\\d{4}"
 }

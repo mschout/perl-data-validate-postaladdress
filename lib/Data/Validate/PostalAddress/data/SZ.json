@@ -12,5 +12,8 @@
       "city",
       "zip"
    ],
+   "zip_examples" : [
+      "H100"
+   ],
    "zip_pattern" : "[HLMS]\\d{3}"
 }

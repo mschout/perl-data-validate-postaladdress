@@ -22,6 +22,10 @@
       "organization",
       "state"
    ],
+   "zip_examples" : [
+      "96941",
+      "96944"
+   ],
    "zip_name_type" : "zip",
    "zip_pattern" : "(9694[1-4])(?:[ \\-](\\d{4}))?"
 }

@@ -9,5 +9,11 @@
    ],
    "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%nMC-{{$zip}} {{$city}} {{$sort_code}}",
    "postal_code_prefix" : "MC-",
+   "zip_examples" : [
+      "98000",
+      "98020",
+      "98011",
+      "98001"
+   ],
    "zip_pattern" : "980\\d{2}"
 }

@@ -21,5 +21,10 @@
       "Tete" : "Tete",
       "Zambezia" : "Zambezia"
    },
+   "zip_examples" : [
+      "1102",
+      "1119",
+      "3212"
+   ],
    "zip_pattern" : "\\d{4}"
 }

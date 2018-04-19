@@ -8,5 +8,11 @@
       "zip"
    ],
    "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$city}} {{$zip}}%n{{$state}}",
+   "zip_examples" : [
+      "LIMA 23",
+      "LIMA 42",
+      "CALLAO 2",
+      "02001"
+   ],
    "zip_pattern" : "(?:LIMA \\d{1,2}|CALLAO 0?\\d)|[0-2]\\d{4}"
 }

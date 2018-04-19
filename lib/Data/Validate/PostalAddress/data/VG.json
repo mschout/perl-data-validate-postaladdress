@@ -10,5 +10,10 @@
    "required_fields" : [
       "street_address"
    ],
+   "zip_examples" : [
+      "VG1110",
+      "VG1150",
+      "VG1160"
+   ],
    "zip_pattern" : "VG\\d{4}"
 }

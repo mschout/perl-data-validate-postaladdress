@@ -9,5 +9,8 @@
    "required_fields" : [
       "street_address"
    ],
+   "zip_examples" : [
+      "GX11 1AA"
+   ],
    "zip_pattern" : "GX11 1AA"
 }

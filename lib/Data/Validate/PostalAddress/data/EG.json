@@ -66,5 +66,9 @@
       "كفر الشيخ" : "Kafr El Sheikh Governorate",
       "مطروح" : "Matrouh Governorate"
    },
+   "zip_examples" : [
+      "12411",
+      "11599"
+   ],
    "zip_pattern" : "\\d{5}"
 }

@@ -55,5 +55,11 @@
    "uppercase_fields" : [
       "state"
    ],
+   "zip_examples" : [
+      "266033",
+      "317204",
+      "100096",
+      "100808"
+   ],
    "zip_pattern" : "\\d{6}"
 }

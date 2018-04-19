@@ -144,6 +144,20 @@ sub postal_code_name {
     return $self->data->{zip_name_type};
 }
 
+=method postal_code_examples(): list
+
+Get a list of postal code examples for this country.
+
+=cut
+
+sub postal_code_examples {
+    my $self = shift;
+
+    my $examples = $self->data->{zip_examples} or return;
+
+    return @$examples;
+}
+
 =method has_state(): boolean
 
 Returns true if this country is subdivided into states or provinces etc.

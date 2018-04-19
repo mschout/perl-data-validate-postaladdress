@@ -14,5 +14,11 @@
       "zip"
    ],
    "uppercase_fields" : [],
+   "zip_examples" : [
+      "2544",
+      "1211",
+      "1556",
+      "3030"
+   ],
    "zip_pattern" : "\\d{4}"
 }

@@ -25,5 +25,10 @@
       "Parròquia d'Andorra la Vella" : "Andorra la Vella",
       "Sant Julià de Lòria" : "Sant Julià de Lòria"
    },
+   "zip_examples" : [
+      "AD100",
+      "AD501",
+      "AD700"
+   ],
    "zip_pattern" : "AD[1-7]0\\d"
 }

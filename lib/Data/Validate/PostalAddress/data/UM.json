@@ -21,6 +21,9 @@
       "organization",
       "state"
    ],
+   "zip_examples" : [
+      "96898"
+   ],
    "zip_name_type" : "zip",
    "zip_pattern" : "96898"
 }

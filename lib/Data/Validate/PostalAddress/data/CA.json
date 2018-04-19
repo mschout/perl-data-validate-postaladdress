@@ -52,5 +52,12 @@
       "state",
       "zip"
    ],
+   "zip_examples" : [
+      "H3Z 2Y7",
+      "V8X 3X4",
+      "T0L 1K0",
+      "T0H 1A0",
+      "K1A 0B1"
+   ],
    "zip_pattern" : "[ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJ-NPRSTV-Z] ?\\d[ABCEGHJ-NPRSTV-Z]\\d"
 }

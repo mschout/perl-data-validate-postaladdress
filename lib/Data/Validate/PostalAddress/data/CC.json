@@ -12,5 +12,8 @@
       "city",
       "state"
    ],
+   "zip_examples" : [
+      "6799"
+   ],
    "zip_pattern" : "6799"
 }

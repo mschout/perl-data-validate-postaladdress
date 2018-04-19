@@ -17,5 +17,8 @@
       "city",
       "state"
    ],
+   "zip_examples" : [
+      "31001"
+   ],
    "zip_pattern" : "\\d{5}"
 }

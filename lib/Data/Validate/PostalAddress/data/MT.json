@@ -11,5 +11,13 @@
       "city",
       "zip"
    ],
+   "zip_examples" : [
+      "NXR 01",
+      "ZTN 05",
+      "GPO 01",
+      "BZN 1130",
+      "SPB 6031",
+      "VCT 1753"
+   ],
    "zip_pattern" : "[A-Z]{3} ?\\d{2,4}"
 }

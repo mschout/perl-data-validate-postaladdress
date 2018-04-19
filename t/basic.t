@@ -32,6 +32,8 @@ ok $obj->is_valid_postal_code('75229-1234');
 ok ! $obj->is_valid_postal_code('752299');
 ok ! $obj->is_valid_postal_code('ABC123');
 
+is_deeply [ $obj->postal_code_examples ], ['95014', '22162-1010'];
+
 my %pc_names = (
     AS => 'zip',
     IE => 'eircode',

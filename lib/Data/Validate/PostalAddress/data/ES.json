@@ -126,5 +126,10 @@
       "city",
       "state"
    ],
+   "zip_examples" : [
+      "28039",
+      "28300",
+      "28070"
+   ],
    "zip_pattern" : "\\d{5}"
 }

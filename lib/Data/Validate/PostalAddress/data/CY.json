@@ -7,5 +7,10 @@
       "zip"
    ],
    "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%n{{$zip}} {{$city}}",
+   "zip_examples" : [
+      "2008",
+      "3304",
+      "1900"
+   ],
    "zip_pattern" : "\\d{4}"
 }

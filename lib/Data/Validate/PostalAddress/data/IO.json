@@ -16,5 +16,8 @@
       "city",
       "zip"
    ],
+   "zip_examples" : [
+      "BBND 1ZZ"
+   ],
    "zip_pattern" : "BBND 1ZZ"
 }

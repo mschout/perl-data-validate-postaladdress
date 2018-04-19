@@ -25,5 +25,11 @@
       "Tarapacá" : "Tarapacá",
       "Valparaíso" : "Valparaíso"
    },
+   "zip_examples" : [
+      "8340457",
+      "8720019",
+      "1230000",
+      "8329100"
+   ],
    "zip_pattern" : "\\d{7}"
 }

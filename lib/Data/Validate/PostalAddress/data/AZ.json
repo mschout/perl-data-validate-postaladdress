@@ -8,5 +8,8 @@
    ],
    "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%nAZ {{$zip}} {{$city}}",
    "postal_code_prefix" : "AZ ",
+   "zip_examples" : [
+      "1000"
+   ],
    "zip_pattern" : "\\d{4}"
 }

@@ -51,5 +51,8 @@
       "city",
       "state"
    ],
+   "zip_examples" : [
+      "52000"
+   ],
    "zip_pattern" : "\\d{5}"
 }

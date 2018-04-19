@@ -193,5 +193,10 @@
       "street_address",
       "city"
    ],
+   "zip_examples" : [
+      "247112",
+      "103375",
+      "188300"
+   ],
    "zip_pattern" : "\\d{6}"
 }

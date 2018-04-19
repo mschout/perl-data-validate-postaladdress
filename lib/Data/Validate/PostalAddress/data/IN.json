@@ -91,6 +91,10 @@
       "Uttarakhand" : "Uttarakhand",
       "West Bengal" : "West Bengal"
    },
+   "zip_examples" : [
+      "110034",
+      "110001"
+   ],
    "zip_name_type" : "pin",
    "zip_pattern" : "\\d{6}"
 }

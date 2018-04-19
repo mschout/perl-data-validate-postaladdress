@@ -16,5 +16,9 @@
       "city",
       "zip"
    ],
+   "zip_examples" : [
+      "GY1 1AA",
+      "GY2 2BT"
+   ],
    "zip_pattern" : "GY\\d[\\dA-Z]? ?\\d[ABD-HJLN-UW-Z]{2}"
 }

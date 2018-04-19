@@ -18,5 +18,10 @@
       "name",
       "organization"
    ],
+   "zip_examples" : [
+      "1037",
+      "2380",
+      "1540"
+   ],
    "zip_pattern" : "\\d{4}"
 }

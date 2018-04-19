@@ -10,5 +10,10 @@
       "street_address",
       "zip"
    ],
+   "zip_examples" : [
+      "546080",
+      "308125",
+      "408600"
+   ],
    "zip_pattern" : "\\d{6}"
 }

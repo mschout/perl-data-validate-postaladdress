@@ -48,5 +48,8 @@
       "Sumatera Selatan" : "Sumatera Selatan",
       "Sumatera Utara" : "Sumatera Utara"
    },
+   "zip_examples" : [
+      "40115"
+   ],
    "zip_pattern" : "\\d{5}"
 }

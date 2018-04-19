@@ -16,5 +16,8 @@
       "city",
       "zip"
    ],
+   "zip_examples" : [
+      "TKCA 1ZZ"
+   ],
    "zip_pattern" : "TKCA 1ZZ"
 }

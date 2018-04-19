@@ -179,5 +179,9 @@
       "Şanlıurfa" : "Şanlıurfa",
       "Şırnak" : "Şırnak"
    },
+   "zip_examples" : [
+      "01960",
+      "06101"
+   ],
    "zip_pattern" : "\\d{5}"
 }

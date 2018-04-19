@@ -73,5 +73,10 @@
       "місто Київ" : "Kyiv city",
       "місто Севастополь" : "Sevastopol' city"
    },
+   "zip_examples" : [
+      "15432",
+      "01055",
+      "01001"
+   ],
    "zip_pattern" : "\\d{5}"
 }

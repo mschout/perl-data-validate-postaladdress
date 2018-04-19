@@ -20,5 +20,8 @@
       "São Nicolau" : "São Nicolau",
       "São Vicente" : "São Vicente"
    },
+   "zip_examples" : [
+      "7600"
+   ],
    "zip_pattern" : "\\d{4}"
 }

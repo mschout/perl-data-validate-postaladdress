@@ -12,5 +12,9 @@
       "city",
       "zip"
    ],
+   "zip_examples" : [
+      "1234 AB",
+      "2490 AA"
+   ],
    "zip_pattern" : "\\d{4} ?[A-Z]{2}"
 }

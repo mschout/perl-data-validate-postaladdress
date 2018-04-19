@@ -18,6 +18,10 @@
       "name",
       "organization"
    ],
+   "zip_examples" : [
+      "96910",
+      "96931"
+   ],
    "zip_name_type" : "zip",
    "zip_pattern" : "(969(?:[12]\\d|3[12]))(?:[ \\-](\\d{4}))?"
 }

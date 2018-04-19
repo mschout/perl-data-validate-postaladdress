@@ -129,6 +129,10 @@ sub create_country_definition {
         $format{fields} = get_available_fields($$data{fmt});
     }
 
+    if (defined $$data{zipex}) {
+        $format{zip_examples} = [ split ',', $$data{zipex} ];
+    }
+
     return \%format;
 }
 

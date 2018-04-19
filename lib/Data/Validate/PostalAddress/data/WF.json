@@ -18,5 +18,8 @@
       "city",
       "sort_code"
    ],
+   "zip_examples" : [
+      "98600"
+   ],
    "zip_pattern" : "986\\d{2}"
 }

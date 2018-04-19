@@ -8,5 +8,9 @@
    ],
    "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%nMD-{{$zip}} {{$city}}",
    "postal_code_prefix" : "MD-",
+   "zip_examples" : [
+      "2012",
+      "2019"
+   ],
    "zip_pattern" : "\\d{4}"
 }

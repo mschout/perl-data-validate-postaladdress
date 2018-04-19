@@ -171,5 +171,9 @@
    "uppercase_fields" : [
       "state"
    ],
+   "zip_examples" : [
+      "10150",
+      "10210"
+   ],
    "zip_pattern" : "\\d{5}"
 }

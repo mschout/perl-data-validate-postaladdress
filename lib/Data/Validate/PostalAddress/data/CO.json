@@ -13,5 +13,10 @@
       "state"
    ],
    "state_name_type" : "department",
+   "zip_examples" : [
+      "111221",
+      "130001",
+      "760011"
+   ],
    "zip_pattern" : "\\d{6}"
 }

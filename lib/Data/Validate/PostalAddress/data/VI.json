@@ -22,6 +22,10 @@
       "organization",
       "state"
    ],
+   "zip_examples" : [
+      "00802-1222",
+      "00850-9802"
+   ],
    "zip_name_type" : "zip",
    "zip_pattern" : "(008(?:(?:[0-4]\\d)|(?:5[01])))(?:[ \\-](\\d{4}))?"
 }

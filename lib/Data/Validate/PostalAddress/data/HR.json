@@ -8,5 +8,10 @@
    ],
    "format" : "{{$name}}%n{{$organization}}%n{{$street_address}}%nHR-{{$zip}} {{$city}}",
    "postal_code_prefix" : "HR-",
+   "zip_examples" : [
+      "10000",
+      "21001",
+      "10002"
+   ],
    "zip_pattern" : "\\d{5}"
 }

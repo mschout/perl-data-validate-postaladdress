@@ -58,5 +58,8 @@
    "uppercase_fields" : [
       "zip"
    ],
+   "zip_examples" : [
+      "03051"
+   ],
    "zip_pattern" : "\\d{5}"
 }

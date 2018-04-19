@@ -38,5 +38,9 @@
       "city",
       "state"
    ],
+   "zip_examples" : [
+      "JH 09010",
+      "AD 11010"
+   ],
    "zip_pattern" : "[A-Z]{2} ?\\d{5}"
 }

@@ -242,5 +242,10 @@
       "city",
       "state"
    ],
+   "zip_examples" : [
+      "00144",
+      "47037",
+      "39049"
+   ],
    "zip_pattern" : "\\d{5}"
 }

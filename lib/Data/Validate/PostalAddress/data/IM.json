@@ -16,5 +16,9 @@
       "city",
       "zip"
    ],
+   "zip_examples" : [
+      "IM2 1AA",
+      "IM99 1PS"
+   ],
    "zip_pattern" : "IM\\d[\\dA-Z]? ?\\d[ABD-HJLN-UW-Z]{2}"
 }

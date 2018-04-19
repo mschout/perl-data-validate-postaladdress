@@ -12,5 +12,8 @@
       "city",
       "state"
    ],
+   "zip_examples" : [
+      "7050"
+   ],
    "zip_pattern" : "\\d{4}"
 }

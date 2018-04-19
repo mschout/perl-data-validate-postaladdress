@@ -16,5 +16,8 @@
       "city",
       "zip"
    ],
+   "zip_examples" : [
+      "PCRN 1ZZ"
+   ],
    "zip_pattern" : "PCRN 1ZZ"
 }

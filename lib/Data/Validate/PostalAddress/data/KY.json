@@ -17,5 +17,10 @@
       "Grand Cayman" : "Grand Cayman",
       "Little Cayman" : "Little Cayman"
    },
+   "zip_examples" : [
+      "KY1-1100",
+      "KY1-1702",
+      "KY2-2101"
+   ],
    "zip_pattern" : "KY\\d-\\d{4}"
 }
