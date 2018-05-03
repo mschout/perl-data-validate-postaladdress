@@ -262,6 +262,61 @@ sub is_valid_state_name {
     }
 }
 
+=method format(%fields): string
+
+Formats an address using the country formatting template. C<%fields> is a hash
+containing the recognized L<FIELD NAMES>.  C<street_address> can be either a
+string or an arrayref for multi-line street addresses.
+
+Example:
+
+ $addr->format(
+     name           => 'Harley Quinn',
+     organization   => 'Arkham Asylum',
+     street_address => '123 Wayside Lane',
+     city           => 'Gotham',
+     state          => 'NY',
+     zip            => '73512');
+
+Or, with a multi-line street address
+
+ $addr->format(
+     name           => 'Harley Quinn',
+     organization   => 'Arkham Asylum',
+     street_address => ['123 Wayside Lane', 'Suite 100'],
+     city           => 'Gotham',
+     state          => 'NY',
+     zip            => '73512');
+
+=cut
+
+sub format {
+    my ($self, %fields) = @_;
+
+    require Text::Template;
+
+    # deal with street address arrayref
+    if (defined $fields{street_address} and ref $fields{street_address} eq 'ARRAY') {
+        $fields{street_address} = join $/, @{ $fields{street_address} };
+    }
+
+    my $format = $self->data->{format};
+
+    # handle %n -> newline
+    $format =~ s|\%n|$/|g;
+
+    my $tmpl = Text::Template->new(
+        type   => 'string',
+        source => $format);
+
+    my $address = $tmpl->fill_in(hash => \%fields);
+
+    # remove blank lines (e.g.: organization is optional)
+    $address =~ s|^\s*||smg;
+
+    return $address;
+}
+
 sub _load_country_file {
     my ($self, $country) = @_;
 
