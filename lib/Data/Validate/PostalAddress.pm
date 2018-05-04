@@ -268,6 +268,8 @@ Formats an address using the country formatting template. C<%fields> is a hash
 containing the recognized L<FIELD NAMES>.  C<street_address> can be either a
 string or an arrayref for multi-line street addresses.
 
+C<%fields> can also be passed as a hashref.
+
 Example:
 
  $addr->format(
@@ -278,7 +280,7 @@ Example:
      state          => 'NY',
      zip            => '73512');
 
-Or, with a multi-line street address
+Or, with a multi-line street address:
 
  $addr->format(
      name           => 'Harley Quinn',
@@ -288,10 +290,14 @@ Or, with a multi-line street address
      state          => 'NY',
      zip            => '73512');
 
+Hashrefs are fine too:
+
+ $addr->format(\%args);
+
 =cut
 
 sub format {
-    my ($self, %fields) = @_;
+    my ($self, %fields) = __method_args(@_);
 
     require Text::Template;
 
@@ -363,6 +369,27 @@ sub _build_data_dir {
         ->parent
         ->child('PostalAddress/data')
         ->stringify;
+}
+
+# helper function to dereference method args
+sub __method_args {
+    my $self = shift;
+
+    if (@_ == 0) {
+        return $self;
+    }
+    elsif (@_ == 1) {
+        # deref hash or arrayref
+        if (ref $_[0] eq 'HASH') {
+            return ($self, %{ $_[0] });
+        }
+        elsif (ref $_[0] eq 'ARRAY') {
+            return ($self, @{ $_[0] });
+        }
+    }
+    else {
+        return ($self, @_);
+    }
 }
 
 1;

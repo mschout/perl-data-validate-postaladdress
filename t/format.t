@@ -92,14 +92,16 @@ my @tests = (
             'Apt #123',
             'Concord, CA 94520'
         )
-    ),
-
+    )
 );
 
 for my $test (@tests) {
     my ($country, $args, $expected) = @$test;
     my $obj = new_ok 'Data::Validate::PostalAddress', [$country];
+
+    # test as both a hash and a hashref
     is_string $obj->format(%$args), $expected;
+    is_string $obj->format($args), $expected;
 }
 
 done_testing;
